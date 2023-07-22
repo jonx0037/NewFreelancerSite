@@ -2264,27 +2264,22 @@ progress {
 }
 
 /* Adjust the background and text colors */
-.contact-form {
-  background-color: #333; /* Dark theme background color */
-  color: #fff; /* Light text color */
-}
-
-.contact-form input[type="text"],
-.contact-form textarea {
+.form-floating input[type="text"],
+.form-floating textarea {
   background-color: #444; /* Slightly lighter background color */
   color: #fff; /* Light text color */
 }
 
 /* Make the textarea label visible */
-.contact-form textarea:focus + label {
+.form-floating textarea:focus + label {
   transform: translateY(-100%);
   opacity: 0.5;
   transition: all 0.2s ease-in-out;
 }
 
 /* Position the label above the textarea */
-.contact-form textarea:focus + label,
-.contact-form textarea:not(:placeholder-shown) + label {
+.form-floating textarea:focus + label,
+.form-floating textarea:not(:placeholder-shown) + label {
   font-size: 0.8em;
   line-height: 1;
   transform: translateY(-100%);
