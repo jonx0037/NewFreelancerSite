@@ -2266,8 +2266,8 @@ progress {
 /* Adjust the background and text colors */
 .form-floating input[type="text"],
 .form-floating textarea {
-  background-color: #f8f9fa; /* Lighter background color */
-  color: #495057; /* Dark text color */
+  background-color: #444; /* Slightly lighter background color */
+  color: #fff; /* Light text color */
 }
 
 /* Make the textarea label visible */
@@ -2276,7 +2276,7 @@ progress {
   transform: translateY(-100%);
   opacity: 1;
   transition: all 0.2s ease-in-out;
-  color: #6c757d; /* Label text color */
+  color: #aaa; /* Label text color */
 }
 
 /* Position the label above the textarea */
