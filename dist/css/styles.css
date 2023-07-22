@@ -2272,15 +2272,6 @@ progress {
   color: #aaa; /* Label text color */
 }
 
-/* Make the textarea label visible */
-.form-floating textarea:focus ~ label,
-.form-floating textarea:not(:placeholder-shown) ~ label {
-  transform: translateY(-100%);
-  opacity: 1;
-  transition: all 0.2s ease-in-out;
-  color: #aaa; /* Label text color */
-}
-
 .form-control {
     background-color: #f8f9fa; /* Lighter background color */
     color: #495057; /* Dark text color */
