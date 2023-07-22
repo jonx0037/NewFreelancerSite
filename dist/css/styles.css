@@ -2263,6 +2263,24 @@ progress {
     }
 }
 
+.contact-form {
+  background-color: #333; /* Dark theme background color */
+  color: #fff; /* Light text color */
+  border: 1px solid #ccc; /* Light border color */
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  background-color: #444; /* Slightly lighter background color */
+  color: #fff; /* Light text color */
+  border: 1px solid #888; /* Darker border color */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa; /* Lighter placeholder text color */
+}
+
 .form-label {
     margin-bottom: 0.5rem;
 }
