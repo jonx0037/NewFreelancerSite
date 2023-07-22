@@ -2263,23 +2263,35 @@ progress {
     }
 }
 
+/* Adjust the background and text colors */
 .contact-form {
   background-color: #333; /* Dark theme background color */
   color: #fff; /* Light text color */
-  border: 1px solid #ccc; /* Light border color */
 }
 
 .contact-form input[type="text"],
 .contact-form textarea {
   background-color: #444; /* Slightly lighter background color */
   color: #fff; /* Light text color */
-  border: 1px solid #888; /* Darker border color */
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #aaa; /* Lighter placeholder text color */
+/* Make the textarea label visible */
+.contact-form textarea:focus + label {
+  transform: translateY(-100%);
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
 }
+
+/* Position the label above the textarea */
+.contact-form textarea:focus + label,
+.contact-form textarea:not(:placeholder-shown) + label {
+  font-size: 0.8em;
+  line-height: 1;
+  transform: translateY(-100%);
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
 
 .form-label {
     margin-bottom: 0.5rem;
